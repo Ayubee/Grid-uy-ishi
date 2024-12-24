@@ -573,7 +573,7 @@
   justify-content: center;
   gap: 10px;
   grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(50, 1fr);
+  grid-template-rows: repeat(25, 1fr);
 }
 .sixth-task__box__content {
   background-color: grey;
@@ -717,7 +717,8 @@
 
 .window {
   background-image: url("./img/galaxy.jpg");
-  background-position: center;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 695px;
   display: flex;
@@ -726,24 +727,39 @@
 }
 
 .window__box {
-  /* background-color: red; */
-  background-image: url("./img/7f041fc3ecd15391c19bf91c2c16ba32.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-size: contain;
   border: 30px solid coral;
-  width: 500px;
+  width: 800px;
   height: 500px;
   display: flex;
+  border: 25px ridge #bdb76b;
+}
+
+.window__box:hover .window__content__rigth {
+  transform: perspective(2300px) rotateY(-80deg);
+  transition-duration: 2s;
+  transition-property: transform;
+}
+.window__box:hover .window__content__left {
+  transform: perspective(2300px) rotateY(80deg);
+  transition-property: transform;
+  transition-duration: 2s;
 }
 
 .window__content__rigth {
-  width: 250px;
-  height: 440px;
-  color: grey;
+  transform-origin: right center;
+  border: 20px ridge #bdb76b;
+  width: 400px;
+  height: 100%;
+  background-color: grey;
 }
 
 .window__content__left {
-  width: 250px;
-  height: 440px;
-  color: red;
+  transform-origin: left center;
+  border: 20px ridge #bdb76b;
+  width: 400px;
+  height: 100%;
+  background-color: grey;
 }

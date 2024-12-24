@@ -4,19 +4,6 @@
   box-sizing: border-box;
 }
 
-.window {
-  width: 1800px;
-  height: 1000px;
-  background-image: url("img/galaxy.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: contain;
-}
-.window__box {
-}
-.window__content {
-}
-
 .window__href {
   display: inline-block;
   padding: 50px;
@@ -120,14 +107,12 @@
   grid-row: 6 / 6;
 }
 
-.second-task {
-}
 .second-task__box {
   display: grid;
   width: 100%;
   height: 100%;
   display: grid;
-  /* justify-content: center; */
+
   gap: 10px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(13, 1fr);
@@ -525,8 +510,6 @@
   grid-row-start: 7;
 }
 
-.fifth-task {
-}
 .fifth-task__box {
   display: grid;
   gap: 10px;
@@ -583,9 +566,6 @@
 .fifth-task__box__content:nth-child(9) {
   grid-column: 5 / 6;
   grid-row: 4/ 6;
-}
-
-.sixth-task {
 }
 
 .sixth-task__box {
@@ -730,4 +710,40 @@
 }
 .eighth-task__box__content:nth-child(5) {
   grid-area: five;
+}
+
+.about-img {
+}
+
+.window {
+  background-image: url("./img/galaxy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 695px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window__box {
+  /* background-color: red; */
+  background-image: url("./img/7f041fc3ecd15391c19bf91c2c16ba32.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 30px solid coral;
+  width: 500px;
+  height: 500px;
+  display: flex;
+}
+
+.window__content__rigth {
+  width: 250px;
+  height: 440px;
+  color: grey;
+}
+
+.window__content__left {
+  width: 250px;
+  height: 440px;
+  color: red;
 }
